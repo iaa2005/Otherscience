@@ -1,0 +1,244 @@
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-BlackItalic.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-BoldItalic.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-Heavy.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-HeavyItalic.otf") format("opentype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-LightItalic.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-Medium.otf") format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-MediumItalic.otf") format("opentype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-RegularItalic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-Semibold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-SemiboldItalic.otf") format("opentype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-Thin.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-ThinItalic.otf") format("opentype");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-Ultralight.otf") format("opentype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("assets/fonts/SF-Pro-Text-UltralightItalic.otf") format("opentype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "F37 Judge Condensed";
+    src: url("assets/fonts/F37Judge-ThinCondensed.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "F37 Judge Condensed";
+    src: url("assets/fonts/F37Judge-ThinCondensedItalic.ttf") format("truetype");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "F37 Judge Condensed";
+    src: url("assets/fonts/F37Judge-RegularCondensed.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "F37 Judge Condensed";
+    src: url("assets/fonts/F37Judge-RegularCondensedItalic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "F37 Judge Condensed";
+    src: url("assets/fonts/F37Judge-MediumCondensed.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "F37 Judge Condensed";
+    src: url("assets/fonts/F37Judge-MediumCondensedItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "F37 Judge Condensed";
+    src: url("assets/fonts/F37Judge-BoldCondensed.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "F37 Judge Condensed";
+    src: url("assets/fonts/F37Judge-BoldCondensedItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "F37 Judge Compressed";
+    src: url("assets/fonts/F37Judge-RegularCompressedItalic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "F37 Judge Compressed";
+    src: url("assets/fonts/F37Judge-MediumCompressed.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "F37 Judge Compressed";
+    src: url("assets/fonts/F37Judge-MediumCompressedItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "F37 Judge Compressed";
+    src: url("assets/fonts/F37Judge-BoldCompressed.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "F37 Judge Compressed";
+    src: url("assets/fonts/F37Judge-BoldCompressedItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: "Small Pixel";
+    src: url("assets/fonts/small_pixel.ttf") format("truetype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PoeHeadline";
+    src: url("assets/fonts/PoeHeadline.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PoeHeadline";
+    src: url("assets/fonts/PoeHeadlineItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PoeHeadline";
+    src: url("assets/fonts/PoeHeadlineBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
