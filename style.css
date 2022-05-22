@@ -83,7 +83,8 @@ header {
 .block-main {
     width: -webkit-fill-available;
     height: 100vh;
-    background-image: url("assets/images/986c59128259917.6152d9ee39667-2.png");
+    /*background-image: url("assets/images/986c59128259917.6152d9ee39667-2.png");*/
+    background-image: url(assets/images/IMG_8627-2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -92,9 +93,9 @@ header {
 .darker-1 {
     display: block;
     width: 100vw;
-    height: 40%;
+    height: 80%;
     margin-top: auto;
-    background: linear-gradient(0deg, black, transparent);
+    background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0.3) 10%, transparent 100%);
 }
 .logo-main-block {
     width: -webkit-fill-available;
@@ -867,7 +868,8 @@ header {
     margin-top: 10vh;
     width: -webkit-fill-available;
     height: 105vh;
-    background-image: url(assets/images/IMG_8627-2.png);
+    /*background-image: url(assets/images/IMG_8627-2.png);*/
+    background-image: url("assets/images/986c59128259917.6152d9ee39667-2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -895,7 +897,7 @@ header {
 .darker-go-2 {
     display: block;
     width: 100vw;
-    height: 10%;
+    height: 40%;
     background: linear-gradient(0deg, black, transparent 90%);
 }
 .block-go-text {
