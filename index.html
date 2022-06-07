@@ -3,53 +3,56 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Otherscience</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Dive into Otherscience</title>
     <link rel="stylesheet" href="css-fonts.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="index.js" type="text/javascript"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/web3.min.js" type="text/javascript"></script>
+    <script src="js/web3-provider.min.js" type="text/javascript"></script>
+    <script src="js/web3modal.min.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
     <link rel="icon" type="image/png" href="assets/images/otherscience-icon.png">
-    <link rel="icon" type="image/png" href="assets/images/otherscience-icon-2.png">
+    <link href="otherscience-icon.ico" rel="shortcut icon">
 </head>
 
 <body>
     <header>
         <div class="header-div">
             <a class="header-menu-text clickable-1">The world</a>
-            <a class="header-menu-text clickable-1">FAQ</a>
+            <a class="header-menu-text clickable-1" href="faq">FAQ</a>
             <a class="header-menu-text clickable-1">Explore</a>
-            <a class="header-menu-text clickable-1">FizCoin</a>
+            <a class="header-menu-text clickable-1" href="https://fizcoin.xyz">FizCoin</a>
         </div>
         <div class="header-div">
             <a class="header-menu-text">Sciland:</a>
-            <a class="header-menu-text clickable-1">Claim</a>
-            <button class="connect-wallet">
-                <a>Connect wallet</a>
+            <a class="header-menu-text clickable-1" href="solve">Solve</a>
+            <button class="connect-wallet" id="ConnectWalletButton">
+                <a id="address-header-text">Connect wallet</a>
             </button>
         </div>
     </header>
+
     <div class="logo-header-block">
         <a href=""><img class="logo-header" src="assets/images/footer-otherscience.svg"></a>
     </div>
 
+    <div class="light-speed-img"></div>
+
     <!-- Main Block -->
-    <div class="block-main">
-        <!-- <img style="width: -webkit-fill-available; opacity: 1"
-        src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/986c59128259917.6152d9ee39667.jpg"> -->
-        <div class="darker-1"></div>
-        <div class="logo-main-block">
-            <!--        <a class="logo-main-block-text">Otherscience</a>-->
-            <img class="logo-main-block-text" src="assets/images/footer-otherscience.svg">
-            <a class="main-block-text-after">Think differently. Solve problems. Get NFT. Play together.</a>
+    <div class="block-main" id="block-main">
+        <div class="block-main-up" id="block-main-up">
+            <div class="block-main-darker"></div>
         </div>
         <div id="scroll-wrapper">
             <div id="scroll-wrapper-inner">
-              <div id="scroll-title">Scroll to explore</div>
-              <div id="scroll-down"></div>
+                <div id="scroll-title">Scroll to explore</div>
+                <div id="scroll-down"></div>
             </div>
         </div>
+    </div>
+
+    <div class="pre-main-block-text-after">
+        <a class="main-block-text-after">Think differently. Solve problems. Get NFT. Play together.</a>
     </div>
 
     <!-- Dive into Otherscience Block -->
@@ -57,12 +60,12 @@
         <div class="preambula-tag" id="preambula-tag-1">
             <a>To the future</a>
         </div>
-        <div class="title-block">
+        <div class="title-block title-block-1">
             <a class="title-block-text-l">Dive</a>
             <a class="title-block-text-s">into</a>
             <a class="title-block-text-l">Otherscience</a>
         </div>
-        <p class="block-text plane-text">You came here just in time.
+        <p class="block-text block-text-1">You came here just in time.
 
             Otherscience — a gamified Olympiad with tasks from different fields: physics, astronomy, chemistry, mathematics. Anyone can join the game, start solving problems and get NFT for it. The tasks will be interesting for smart, resourceful children and adults.
         </p>
@@ -77,12 +80,12 @@
         <div class="preambula-tag" id="preambula-tag-2">
             <a>LEAVE YOUR KNOWLEDGE</a>
         </div>
-        <div class="title-block-2">
+        <div class="title-block title-block-2">
             <a class="title-block-text-l bigger-l">Make</a>
             <a class="title-block-text-s bigger-s">the</a>
             <a class="title-block-text-l bigger-l">future</a>
         </div>
-        <p class="block-text-2 plane-text">Our mission is to make Otherscience exciting, interactive and collaborative in a way that has never been done before. In this way, Otherscience will be an ever-evolving experience created jointly with its players. With Otherscience, you can participate in prototype builds and task creation, demonstrations and tests that shape the final game design and experience.
+        <p class="block-text block-text-2">Our mission is to make Otherscience exciting, interactive and collaborative in a way that has never been done before. In this way, Otherscience will be an ever-evolving experience created jointly with its players. With Otherscience, you can participate in prototype builds and task creation, demonstrations and tests that shape the final game design and experience.
 
             Building the future is a team effort, and we want you to be part of our team.
         </p>
@@ -97,13 +100,13 @@
         <div class="preambula-tag" id="preambula-tag-3">
             <a>SOLVE PROBLEMS</a>
         </div>
-        <div class="title-block-3">
+        <div class="title-block title-block-3">
             <a class="title-block-text-s bigger-s">Per</a>
             <a class="title-block-text-l bigger-l">aspera</a>
             <a class="title-block-text-s bigger-s">ad</a>
             <a class="title-block-text-l bigger-l">astra</a>
         </div>
-        <p class="block-text-3 plane-text">Our mission is to make Otherscience exciting, interactive and collaborative in a way that has never been done before. In this way, Otherscience will be an ever-evolving experience created jointly with its players. With Otherscience, you can participate in prototype builds and task creation, demonstrations and tests that shape the final game design and experience.
+        <p class="block-text block-text-3">Our mission is to make Otherscience exciting, interactive and collaborative in a way that has never been done before. In this way, Otherscience will be an ever-evolving experience created jointly with its players. With Otherscience, you can participate in prototype builds and task creation, demonstrations and tests that shape the final game design and experience.
 
             Building the future is a team effort, and we want you to be part of our team.
         </p>
@@ -132,10 +135,10 @@
             <div class="preambula-tag" id="preambula-tag-4">
                 <a>OWN A PIECE</a>
             </div>
-            <div class="title-block-4">
+            <div class="title-block title-block-4">
                 <a class="title-block-text-l">Your Sciland Awaits</a>
             </div>
-            <p class="block-text-4 plane-text">Build on the Otherside, collect resources, create and play on it, and make yourself at home. Otherside will be what you make it, and your Otherdeed will be your key.
+            <p class="block-text block-text-4">Build on the Otherside, collect resources, create and play on it, and make yourself at home. Otherside will be what you make it, and your Otherdeed will be your key.
 
                 Your Otherdeed enables you to claim a plot of land when Otherside launches.
 
@@ -155,10 +158,10 @@
         <div class="preambula-tag" id="preambula-tag-5">
             <a>MAKE IT YOUR OWN</a>
         </div>
-        <div class="title-block-5">
+        <div class="title-block title-block-5">
             <a class="title-block-text-l">Create for the Otherscience</a>
         </div>
-        <p class="block-text-5 plane-text">If you like building your own stuff, you can do that too. An SDK will allow creators to make things for the Otherscience as well as sell them in the game’s marketplace — not just characters, but also outfits, tools, structures, and even games.
+        <p class="block-text block-text-5">If you like building your own stuff, you can do that too. An SDK will allow creators to make things for the Otherscience as well as sell them in the game’s marketplace — not just characters, but also outfits, tools, structures, and even games.
 
             Creation comes with perks. Get first dibs on the SDK.
         </p>
@@ -167,14 +170,14 @@
 
     <!-- FizCoin — COIN FOR YOUR VOYAGE Block -->
     <div class="block-6">
-        <img class="block-6-coin" src="assets/images/coin-fizcoin.png">
+        <img class="block-6-coin" src="assets/images/coin-fizcoin.svg">
         <div class="preambula-tag" id="preambula-tag-6">
             <a>FizCoin</a>
         </div>
-        <div class="title-block-6">
+        <div class="title-block title-block-6">
             <a class="title-block-text-l">COIN FOR YOUR VOYAGE</a>
         </div>
-        <p class="block-text-6 plane-text">Otherside doesn’t take cash, credit, or checks.
+        <p class="block-text block-text-6">Otherside doesn’t take cash, credit, or checks.
 
             The economy here runs on FizCoin. Should you aim to purchase an item in Otherside, it’s FIZ you’ll need.
         </p>
@@ -187,10 +190,10 @@
         <div class="preambula-tag" id="preambula-tag-7">
             <a>Multifield and Interactive</a>
         </div>
-        <div class="title-block-7">
+        <div class="title-block title-block-7">
             <a class="title-block-text-l">Game-changing tech</a>
         </div>
-        <p class="block-text-7 plane-text">Otherside is where the impossible happens. With the power of Improbable’s M2 technology, 10,000+ players will be able to interact simultaneously in a single place, connect with natural voice chat (even in crowds of thousands), experience rich, immersive gameplay supported by AI and physics, and move between metaverses. Otherside players will break through barriers in scale, bandwidth, and rendering as they create new types of gameplay and social possibilities.
+        <p class="block-text block-text-7">Otherside is where the impossible happens. With the power of Improbable’s M2 technology, 10,000+ players will be able to interact simultaneously in a single place, connect with natural voice chat (even in crowds of thousands), experience rich, immersive gameplay supported by AI and physics, and move between metaverses. Otherside players will break through barriers in scale, bandwidth, and rendering as they create new types of gameplay and social possibilities.
 
             Just like processing power in your PC can limit the quality of a game’s graphics, metaverses are limited in their scale by how many communication operations or ‘ops’ per second they can process. Typical online game worlds can handle around 10,000 operations per second. Otherside will be able to handle more than half a billion operations per second, which will power new gameplay and interactions never before possible at an unprecedented scale.
 
@@ -234,8 +237,6 @@
         <div class="darker-go-2"></div>
         <div class="logo-main-block">
             <a class="block-go-text">See You with the Otherscience</a>
-<!--            <img class="logo-main-block-text" src="assets/images/otherscience-logo.png">-->
-<!--            <a class="main-block-text-after">Think differently. Solve problems. Get NFT. Play together.</a>-->
             <div class="block-go-buttons">
                 <button class="block-go-button">Solve Problems</button>
                 <button class="block-go-button">Buy Sciland <svg style="display: block;margin-top: auto;margin-bottom: auto;" width="18" height="18" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="ml-[0.625em] mt-[-0.1em]"><path d="M8.14645 3.14645C8.34171 2.95118 8.65829 2.95118 8.85355 3.14645L12.8536 7.14645C13.0488 7.34171 13.0488 7.65829 12.8536 7.85355L8.85355 11.8536C8.65829 12.0488 8.34171 12.0488 8.14645 11.8536C7.95118 11.6583 7.95118 11.3417 8.14645 11.1464L11.2929 8H2.5C2.22386 8 2 7.77614 2 7.5C2 7.22386 2.22386 7 2.5 7H11.2929L8.14645 3.85355C7.95118 3.65829 7.95118 3.34171 8.14645 3.14645Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg></button>
@@ -248,16 +249,16 @@
     <footer>
         <div class="footer-images">
             <a href="https://github.com/iaa2005/">
-                <img height="24" src="assets/images/iaa-labs-logo.svg" alt="IAA Labs">
+                <img height="22" src="assets/images/iaa-labs-logo.svg" alt="IAA Labs">
             </a>
             <a href="https://opensea.io/">
-                <img height="32" src="assets/images/opensea-logo.svg" alt="Opensea">
+                <img height="24" src="assets/images/opensea-logo.svg" alt="Opensea">
             </a>
-            <a href="https://ethereum.org/en/nft/">
-                <img height="32" src="assets/images/nft-logo.svg" alt="NFT">
+            <a href="https://polygon.technology/">
+                <img height="24" src="assets/images/polygon-logo.svg" alt="Polygon">
             </a>
             <a href="https://web3.foundation/">
-                <img height="30" src="assets/images/web3-foundation-logo.svg" alt="Web3 Foundation">
+                <img height="26" src="assets/images/web3-foundation-logo.svg" alt="Web3 Foundation">
             </a>
         </div>
         <div class="footer-div-1">

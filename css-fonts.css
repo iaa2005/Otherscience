@@ -215,6 +215,40 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: "BebasNeue";
+    src: url("assets/fonts/BebasNeue-Cyrillic.ttf") format("truetype");
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "CMU Serif";
+    src: url("assets/fonts/cmunrm.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CMU Serif";
+    src: url("assets/fonts/cmunbx.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "CMU Serif";
+    src: url("assets/fonts/cmunti.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CMU Serif";
+    src: url("assets/fonts/cmunbi.ttf") format("truetype");
+    font-style: italic;
+    font-weight: bold;
+}
 
 @font-face {
     font-family: "Small Pixel";
