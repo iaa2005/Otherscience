@@ -1,0 +1,13 @@
+Metadata and sources of "fizcoin" were published successfully.
+@openzeppelin/contracts/token/ERC20/ERC20.sol :
+dweb:/ipfs/QmawN6PjTwy91pU7ANjCSgbsLc8TDA6hwu9GsFFaNSuhb5
+@openzeppelin/contracts/token/ERC20/IERC20.sol :
+dweb:/ipfs/QmebXWgtEfumQGBdVeM6c71McLixYXQP5Bk6kKXuoY4Bmr
+@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol :
+dweb:/ipfs/QmZQg6gn1sUpM8wHzwNvSnihumUCAhxD119MpXeKp8B9s8
+@openzeppelin/contracts/utils/Context.sol :
+dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3
+FizCoin.sol :
+dweb:/ipfs/QmXfYczgNQeyvkoSbj18DBMor8aWcPmikxPr64xsT7u4RW
+metadata.json :
+dweb:/ipfs/QmYS76A4cGc9z6PnzmwTUskv3Uo1zQD19AKfaRnNud9xep
