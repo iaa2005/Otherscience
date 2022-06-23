@@ -1,6 +1,7 @@
 const Web3Modal = window.Web3Modal.default;
 const Web3 = window.Web3;
 const WalletConnectProvider = window.WalletConnectProvider;
+const CoinbaseWalletProvider = window.CoinbaseWalletProvider;
 const evmChains = window.evmChains;
 
 let web3Modal;
@@ -33,7 +34,6 @@ function init() {
         walletconnect: {
             package: WalletConnectProvider, // required
             options: {
-                infuraId: "",
                 qrcodeModalOptions: {
                     mobileLinks: [
                         "rainbow",
@@ -43,13 +43,22 @@ function init() {
                         "imtoken",
                         "pillar"
                     ]
-                }
+                },
+                // rpc: {
+                //     137: "https://polygon-rpc.com",
+                // },
+            }
+        },
+        coinbasewallet: {
+            package: CoinbaseWalletProvider,
+            options: {
+                appName: "Otherscience",
             }
         }
     };
 
     web3Modal = new Web3Modal({
-        theme: "dark",
+        theme: "light",
         network: "maticMumbai",
         cacheProvider: true,
         providerOptions
@@ -121,7 +130,7 @@ async function refreshAccountData() {
 }
 
 function checkPublicOn() {
-    return false;
+    return true;
 }
 
 async function onConnect() {
@@ -157,7 +166,7 @@ async function onConnect() {
         fetchAccountData();
     });
 
-    if (checkPublicOn() === true && loadingTask === true) {
+    if (checkPublicOn() === true && loadingTask === true && provider.chainId === "0x89") {
         $(".not-active-public-div").css("display", "none");
         $(".main-block").css("display", "grid").addClass("anim-on");
         setTimeout(function () {
@@ -196,6 +205,23 @@ async function onDisconnect() {
     selectedAccount = null;
 }
 
+function openMenu() {
+    $(".menu-open-button").css("display", "none");
+    $(".menu-close-button").css("display", "block");
+    $(".mobile-menu").addClass("menu-open");
+    // $(".logo-header-block-mobile").addClass("down");
+    $("body").addClass("body-clip");
+}
+
+function closeMenu() {
+    $(".menu-close-button").css("display", "none");
+    $(".menu-open-button").css("display", "block");
+    $(".mobile-menu").removeClass("menu-open");
+    // $(".logo-header-block-mobile").removeClass("down");
+    $("body").removeClass("body-clip");
+
+}
+
 $(document).ready(async function() {
     let buttonConnect = document.getElementById("ConnectWalletButton")
     buttonConnect.addEventListener("click", onConnect)
@@ -205,6 +231,16 @@ $(document).ready(async function() {
     // walletButton.addEventListener("click", onOpenWallet)
 
     init();
+
+    let buttonMenuOpen = document.getElementById("menu-open-button");
+    buttonMenuOpen.addEventListener("click", openMenu)
+
+    let buttonMenuClose = document.getElementById("menu-close-button");
+    buttonMenuClose.addEventListener("click", closeMenu)
+
+    setTimeout( function () {
+        $(".header").css("top", "0").css("animation", "--");
+    }, 4000)
 
     setTimeout( function () {
         if (checkPublicOn() === false) {

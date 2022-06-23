@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Dive into Otherscience</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css-fonts.css">
     <link rel="stylesheet" href="style.css">
     <script src="js/jquery.min.js"></script>
@@ -11,26 +12,106 @@
     <script src="js/web3-provider.min.js" type="text/javascript"></script>
     <script src="js/web3modal.min.js" type="text/javascript"></script>
     <script src="js/index.js" type="text/javascript"></script>
-    <link rel="icon" type="image/png" href="assets/images/otherscience-icon.png">
+    <link rel="icon" type="image/png" href="assets/images/otherscience-icon-2.png">
     <link href="otherscience-icon.ico" rel="shortcut icon">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="header-div">
-            <a class="header-menu-text clickable-1">The world</a>
+            <a class="header-menu-text clickable-1" href="vote">Vote</a>
             <a class="header-menu-text clickable-1" href="faq">FAQ</a>
-            <a class="header-menu-text clickable-1">Explore</a>
             <a class="header-menu-text clickable-1" href="https://fizcoin.xyz">FizCoin</a>
+            <a class="header-menu-text clickable-1">Crowdsale</a>
         </div>
         <div class="header-div">
-            <a class="header-menu-text">Sciland:</a>
             <a class="header-menu-text clickable-1" href="solve">Solve</a>
+            <a class="header-menu-text clickable-1" href="claim">Claim NFT</a>
             <button class="connect-wallet" id="ConnectWalletButton">
                 <a id="address-header-text">Connect wallet</a>
             </button>
         </div>
     </header>
+
+    <!-- Mobile Start -->
+    <div class="header-mobile-before"></div>
+
+    <div class="header-mobile">
+        <svg class="menu-open-button" id="menu-open-button" width="21" height="21" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z" fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+        <svg class="menu-close-button" id="menu-close-button" width="21" height="21" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg"><path d="M12.8536 2.85355C13.0488 2.65829 13.0488 2.34171 12.8536 2.14645C12.6583 1.95118 12.3417 1.95118 12.1464 2.14645L7.5 6.79289L2.85355 2.14645C2.65829 1.95118 2.34171 1.95118 2.14645 2.14645C1.95118 2.34171 1.95118 2.65829 2.14645 2.85355L6.79289 7.5L2.14645 12.1464C1.95118 12.3417 1.95118 12.6583 2.14645 12.8536C2.34171 13.0488 2.65829 13.0488 2.85355 12.8536L7.5 8.20711L12.1464 12.8536C12.3417 13.0488 12.6583 13.0488 12.8536 12.8536C13.0488 12.6583 13.0488 12.3417 12.8536 12.1464L8.20711 7.5L12.8536 2.85355Z" fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </div>
+
+    <div class="mobile-menu">
+        <div class="mobile-menu-block">
+            <a class="mobile-menu-text clickable-2" href="vote">DAO</a>
+        </div>
+        <div class="mobile-menu-block">
+            <a class="mobile-menu-text clickable-2" href="faq">FAQ</a>
+        </div>
+<!--        <div class="mobile-menu-block">-->
+<!--            <a class="mobile-menu-text clickable-2" href="explore">Explore</a>-->
+<!--        </div>-->
+        <div class="mobile-menu-block">
+            <a class="mobile-menu-text clickable-2" href="https://fizcoin.xyz">FizCoin</a>
+        </div>
+        <div class="mobile-menu-block">
+            <a class="mobile-menu-text clickable-2" href="solve">Solve Problems</a>
+        </div>
+        <div class="mobile-menu-block">
+            <a class="mobile-menu-text clickable-2" href="claim">Claim NFT</a>
+        </div>
+
+        <button class="connect-wallet connect-wallet-mobile" id="ConnectWalletButton2">
+            <a id="address-header-text-2">Connect wallet</a>
+        </button>
+
+        <footer class="footer-mobile">
+            <div class="footer-images">
+                <a href="https://iaa2005.tk/">
+                    <img height="22" src="assets/images/iaa-labs-logo.svg" alt="IAA Labs">
+                </a>
+                <a href="https://opensea.io/">
+                    <img height="24" src="assets/images/opensea-logo.svg" alt="Opensea">
+                </a>
+                <a href="https://polygon.technology/">
+                    <img height="24" src="assets/images/polygon-logo.svg" alt="Polygon">
+                </a>
+                <a href="https://web3.foundation/">
+                    <img height="26" src="assets/images/web3-foundation-logo.svg" alt="Web3 Foundation">
+                </a>
+            </div>
+            <div class="footer-div-1">
+                <a class="footer-text">© 2022 IAA Labs Inc.</a>
+                <div class="footer-menu">
+                    <a class="footer-text footer-underlined">Terms & conditions</a>
+                    <a class="footer-text footer-underlined">Privacy</a>
+                    <a class="footer-text footer-underlined">License</a>
+                    <a class="footer-text footer-underlined">NFT Purchase agreement</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/iaa2005/" class="footer-social">
+                        <svg width="32" height="32" viewBox="0 0 32 32" class="footer-social-svg">
+                            <path fill="#FFFFFF" d="M2 4c4 4 8 8 13 7a6 6 0 0 1 7-7 6 6 0 0 1 4 2 8 8 0 0 0 5-2 8 8 0 0 1-3 4 8 8 0 0 0 4-1 8 8 0 0 1-4 4 18 18 0 0 1-18 19 18 18 0 0 1-10-3 12 12 0 0 0 8-3 8 8 0 0 1-5-4 8 8 0 0 0 3-.5A8 8 0 0 1 0 12a8 8 0 0 0 3 1 8 8 0 0 1-1-9"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/iaa2005/" class="footer-social">
+                        <svg height="32" width="32" viewBox="40 60 155 135" class="footer-social-svg">
+                            <path fill="#fff" d="m44.691 125.87c14.028-7.727 29.687-14.176 44.318-20.658 25.171-10.617 50.442-21.05 75.968-30.763 4.966-1.655 13.89-3.273 14.765 4.087-.479 10.418-2.45 20.775-3.802 31.132-3.431 22.776-7.398 45.474-11.265 68.175-1.333 7.561-10.805 11.476-16.866 6.637-14.566-9.839-29.244-19.582-43.624-29.649-4.711-4.787-.342-11.66 3.864-15.078 11.997-11.824 24.72-21.868 36.09-34.302 3.067-7.407-5.995-1.165-8.984.748-16.424 11.318-32.446 23.327-49.762 33.274-8.845 4.869-19.154.708-27.995-2.009-7.927-3.282-19.543-6.589-12.708-11.593z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bg-div">
+                <img class="footer-bg" src="assets/images/footer-otherscience.svg">
+                <div class="footer-bg-darker"></div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="logo-header-block-mobile">
+        <a href=""><img class="logo-header-mobile" src="assets/images/footer-otherscience.svg"></a>
+    </div>
+    <!-- Mobile End -->
 
     <div class="logo-header-block">
         <a href=""><img class="logo-header" src="assets/images/footer-otherscience.svg"></a>
@@ -116,27 +197,42 @@
     <div class="block-4">
         <div class="block-4-cards">
             <div class="block-4-cards-in">
-                <div class="block-4-card"></div>
-                <div class="block-4-card"></div>
-                <div class="block-4-card"></div>
-                <div class="block-4-card"></div>
-                <div class="block-4-card"></div>
-                <div class="block-4-card"></div>
-
-                <div class="block-4-card"></div>
-                <div class="block-4-card"></div>
-                <div class="block-4-card"></div>
-                <div class="block-4-card"></div>
-                <div class="block-4-card"></div>
-                <div class="block-4-card"></div>
+                <div class="block-4-card"><img src="assets/nfts/f0a3dc4e86dbce2a9f45afe793cf9c722b9b603d77d62f87c49367afcf8953c8-YmU0ZjZhMTYtZGQxNC00ZTIxLTg2OGQtNDhiNThmMDUxNTQw.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/d477a950e801241e845e09b2e7b1ab8c3a277d738f459f4275e3ed4c4cddeac8-ZmUyYTIzYjItOTgzNy00MTI5LWE2MjEtMzc1MjZjM2E2YTI1.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/aeedc4ad559b481379ff972a4bd0a2ebc53d8bade8ab4e19295709e1c54a16aa-ODk3MTU2ODItMDMzOC00YjM5LTk5ODgtZGJlZDZlYzBkOGIy.jpeg"></div>
+                <div class="block-4-card"><img src="assets/nfts/a40d527d1df1f0b29e5e8c48d0676c6f31ae5eed5ae27b751d4062ee9661d1dc-ZTc2NjU1OTEtMmZkNi00NGM3LTkyMDgtOWFhNGExNGMwMWQw.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/699060094acf9605ffd11cd61b4548b36d59983b28704f6067c5e3c10dcb197f-Y2QwNjZmMGMtMTEyNS00YmZmLWE3NTctNjlmOWI4N2MyNjYx.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/7844562aa1287dc2216d50f720b700c0931650548dee2b12853363263f5a7719-OTJlMWM2NzktYjc5Zi00N2JhLThkYWMtNGEzNGI3OGQwOWEz.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/2409cbb15b873f2808e10c3ce2e8cdac98d6002d1e2d33766c0a9027d83d6cd9-YjQxMDJlMzItNjJiZC00YjAxLWIzMGEtMmM0NjEzN2EzYzA4.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/815cc1b15e238507d1763f202da545e8dad608e0eb6d9a1e2395a01541a11af7-ZDVmM2YyYTktMzY5ZS00YjNlLThiMzktZjM3MWU4ZTg5YTY3.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/00355adc43b2bfee04b0871abcd87ac96d7345063907338cbb53183988618da9-MGI4ZmU0MTYtMmNlNC00NjlmLWIwZmEtYzQ5ZGYyOTgzNTVk.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/099fb313ec94289da0bfa54c9774b84e31958d085e142ce1d7af6c71cb4228fc-MzA2NjhlOWItYTRhOC00MzMwLWI2MzAtZWY1OThlMzEyMmFl.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/12c46c2d371571554f30f2d60ff69155edb3080a945ee131cca1a8b47aab83a3-MjI5Yjg5NzMtOTZjMS00NmY1LThlMDgtZWQ5MTI5YTA5Mjdk.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/08d50c623ec29604564341d203e633003fa6b8bc70a21665bb59d8e669b39575-MmQ0ZDRjMDAtOThkNS00Nzc2LTg3ZjktOGZmMjI3ODhmY2Jh.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/6f4ec689d4b74bd47d40501c80ba0d15d2ccf2117b0fb71b1ab862cd3a91ae13-NTgyYzY5NDMtMjhhYi00NGFhLThjY2EtYmIxZTIyNzNlNTg2.webp"></div>
+            </div>
+            <div class="block-4-cards-in">
+                <div class="block-4-card"><img src="assets/nfts/f0a3dc4e86dbce2a9f45afe793cf9c722b9b603d77d62f87c49367afcf8953c8-YmU0ZjZhMTYtZGQxNC00ZTIxLTg2OGQtNDhiNThmMDUxNTQw.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/d477a950e801241e845e09b2e7b1ab8c3a277d738f459f4275e3ed4c4cddeac8-ZmUyYTIzYjItOTgzNy00MTI5LWE2MjEtMzc1MjZjM2E2YTI1.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/aeedc4ad559b481379ff972a4bd0a2ebc53d8bade8ab4e19295709e1c54a16aa-ODk3MTU2ODItMDMzOC00YjM5LTk5ODgtZGJlZDZlYzBkOGIy.jpeg"></div>
+                <div class="block-4-card"><img src="assets/nfts/a40d527d1df1f0b29e5e8c48d0676c6f31ae5eed5ae27b751d4062ee9661d1dc-ZTc2NjU1OTEtMmZkNi00NGM3LTkyMDgtOWFhNGExNGMwMWQw.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/699060094acf9605ffd11cd61b4548b36d59983b28704f6067c5e3c10dcb197f-Y2QwNjZmMGMtMTEyNS00YmZmLWE3NTctNjlmOWI4N2MyNjYx.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/7844562aa1287dc2216d50f720b700c0931650548dee2b12853363263f5a7719-OTJlMWM2NzktYjc5Zi00N2JhLThkYWMtNGEzNGI3OGQwOWEz.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/2409cbb15b873f2808e10c3ce2e8cdac98d6002d1e2d33766c0a9027d83d6cd9-YjQxMDJlMzItNjJiZC00YjAxLWIzMGEtMmM0NjEzN2EzYzA4.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/815cc1b15e238507d1763f202da545e8dad608e0eb6d9a1e2395a01541a11af7-ZDVmM2YyYTktMzY5ZS00YjNlLThiMzktZjM3MWU4ZTg5YTY3.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/00355adc43b2bfee04b0871abcd87ac96d7345063907338cbb53183988618da9-MGI4ZmU0MTYtMmNlNC00NjlmLWIwZmEtYzQ5ZGYyOTgzNTVk.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/099fb313ec94289da0bfa54c9774b84e31958d085e142ce1d7af6c71cb4228fc-MzA2NjhlOWItYTRhOC00MzMwLWI2MzAtZWY1OThlMzEyMmFl.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/12c46c2d371571554f30f2d60ff69155edb3080a945ee131cca1a8b47aab83a3-MjI5Yjg5NzMtOTZjMS00NmY1LThlMDgtZWQ5MTI5YTA5Mjdk.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/08d50c623ec29604564341d203e633003fa6b8bc70a21665bb59d8e669b39575-MmQ0ZDRjMDAtOThkNS00Nzc2LTg3ZjktOGZmMjI3ODhmY2Jh.webp"></div>
+                <div class="block-4-card"><img src="assets/nfts/6f4ec689d4b74bd47d40501c80ba0d15d2ccf2117b0fb71b1ab862cd3a91ae13-NTgyYzY5NDMtMjhhYi00NGFhLThjY2EtYmIxZTIyNzNlNTg2.webp"></div>
             </div>
         </div>
         <div class="block-4-in">
             <div class="preambula-tag" id="preambula-tag-4">
-                <a>OWN A PIECE</a>
+                <a>OWN AN ART</a>
             </div>
             <div class="title-block title-block-4">
-                <a class="title-block-text-l">Your Sciland Awaits</a>
+                <a class="title-block-text-l">Your NFT Awaits</a>
             </div>
             <p class="block-text block-text-4">Build on the Otherside, collect resources, create and play on it, and make yourself at home. Otherside will be what you make it, and your Otherdeed will be your key.
 
@@ -248,7 +344,7 @@
 
     <footer>
         <div class="footer-images">
-            <a href="https://github.com/iaa2005/">
+            <a href="https://iaa2005.tk/">
                 <img height="22" src="assets/images/iaa-labs-logo.svg" alt="IAA Labs">
             </a>
             <a href="https://opensea.io/">

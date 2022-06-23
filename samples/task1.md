@@ -14,11 +14,11 @@ One of the floors of the candle house consists of a central corridor and eight i
    
 Notes: the heating power is constant and does not depend on external factors. The power of heat loss is proportional to the area of the wall and the temperature difference. Heat losses between floors should be neglected.
 
+$$ \Delta T_2 = \frac{\Delta T}{2} $$
+
 <p style="text-align: center">
 <img src="https://ipfs.io/ipfs/bafybeiedtqa4rmzviddnlikqcecjwrv5gm33vjot65rx3ovgxkk7zwvdru/img.png" height="190">
 </p>
 
 
 [comment]: <> ($N = 2\cdot N_1 + 2\cdot N_2 \cdot \frac{23}{34}$)
-
-[comment]: <> ($$ \Delta T_2 = \frac{\Delta T}{2} $$)

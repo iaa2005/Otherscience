@@ -1,13 +1,14 @@
 const Web3Modal = window.Web3Modal.default;
 const Web3 = window.Web3;
 const WalletConnectProvider = window.WalletConnectProvider;
+const CoinbaseWalletProvider = window.CoinbaseWalletProvider;
 const evmChains = window.evmChains;
 
 let web3Modal;
 let provider;
 let selectedAccount;
 
-const MATIC_PROVIDER = "https://polygon-rpc.com";
+// const MATIC_PROVIDER = "https://polygon-rpc.com";
 // https://polygon-rpc.com
 
 function init() {
@@ -31,7 +32,6 @@ function init() {
         walletconnect: {
             package: WalletConnectProvider, // required
             options: {
-                infuraId: "27e484dcd9e3efcfd25a83a78777cdf1",
                 qrcodeModalOptions: {
                     mobileLinks: [
                         "rainbow",
@@ -41,13 +41,22 @@ function init() {
                         "imtoken",
                         "pillar"
                     ]
-                }
+                },
+                // rpc: {
+                //     137: "https://polygon-rpc.com",
+                // },
+            }
+        },
+        coinbasewallet: {
+            package: CoinbaseWalletProvider,
+            options: {
+                appName: "Otherscience",
             }
         }
     };
 
     web3Modal = new Web3Modal({
-        theme: "dark",
+        theme: "light",
         network: "maticMumbai",
         cacheProvider: true,
         providerOptions
@@ -140,12 +149,6 @@ async function onDisconnect() {
 
     $(".connect-wallet").removeClass("connected-wallet");
 
-    // let menuaddr = document.getElementById("initialized-wallet");
-    // menuaddr.style.display = "none";
-    //
-    // let buttonConnect = document.getElementById("button-wallet-connect");
-    // buttonConnect.style.display = "inline-flex";
-
     selectedAccount = null;
 }
 
@@ -179,6 +182,22 @@ function logoHeaderAnimAndBlock() {
     $(".pre-main-block-text-after").css("opacity", (1 - window.scrollY / window.screen.height * 30))
 }
 
+function openMenu() {
+    $(".menu-open-button").css("display", "none");
+    $(".menu-close-button").css("display", "block");
+    $(".mobile-menu").addClass("menu-open");
+    $(".logo-header-block-mobile").addClass("down");
+    $("body").addClass("body-clip");
+}
+
+function closeMenu() {
+    $(".menu-close-button").css("display", "none");
+    $(".menu-open-button").css("display", "block");
+    $(".mobile-menu").removeClass("menu-open");
+    $(".logo-header-block-mobile").removeClass("down");
+    $("body").removeClass("body-clip");
+
+}
 
 $(document).ready(async function() {
 
@@ -256,13 +275,19 @@ $(document).ready(async function() {
     })
 
     setTimeout( function () {
-        window.addEventListener('scroll', updateScroll)
+        window.addEventListener('scroll', updateScroll);
+        $(".header").css("top", "0").css("animation", "--");
     }, 4000)
 
     let buttonConnect = document.getElementById("ConnectWalletButton")
     buttonConnect.addEventListener("click", onConnect)
-    // let walletButton = document.getElementById("initialized-wallet")
-    // walletButton.addEventListener("click", onOpenWallet)
+
+    let buttonMenuOpen = document.getElementById("menu-open-button");
+    buttonMenuOpen.addEventListener("click", openMenu)
+
+    let buttonMenuClose = document.getElementById("menu-close-button");
+    buttonMenuClose.addEventListener("click", closeMenu)
+
 
     init();
 });

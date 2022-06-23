@@ -1,4 +1,31 @@
+function openMenu() {
+    $(".menu-open-button").css("display", "none");
+    $(".menu-close-button").css("display", "block");
+    $(".mobile-menu").addClass("menu-open");
+    // $(".logo-header-block-mobile").addClass("down");
+    $("body").addClass("body-clip");
+}
+
+function closeMenu() {
+    $(".menu-close-button").css("display", "none");
+    $(".menu-open-button").css("display", "block");
+    $(".mobile-menu").removeClass("menu-open");
+    // $(".logo-header-block-mobile").removeClass("down");
+    $("body").removeClass("body-clip");
+
+}
+
 $(document).ready(async function() {
+    let buttonMenuOpen = document.getElementById("menu-open-button");
+    buttonMenuOpen.addEventListener("click", openMenu)
+
+    let buttonMenuClose = document.getElementById("menu-close-button");
+    buttonMenuClose.addEventListener("click", closeMenu)
+
+    setTimeout( function () {
+        $(".header").css("top", "0").css("animation", "--");
+    }, 4000)
+
     let q1 = 0;
     document.getElementById("block-faq-question-title-1").addEventListener("click", function () {
         if (q1 === 0) {

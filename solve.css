@@ -1,8 +1,11 @@
-::-webkit-scrollbar {
-    display: none;
-}
+/*::-webkit-scrollbar {*/
+/*    display: none;*/
+/*}*/
 #WEB3_CONNECT_MODAL_ID {
     font-family: "SF Pro Text", -apple-system, sans-serif;
+    z-index: 10;
+    position: absolute;
+    top: 0;
 }
 .MathJax {
     color: #FFFFFF;
@@ -11,7 +14,7 @@ body {
     background-color: black;
     margin: 0;
 }
-header {
+.header {
     position: fixed;
     padding: 25px 90px;
     justify-content: space-between;
@@ -28,6 +31,110 @@ header {
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
 }
+
+/* For Mobile Start */
+.header-mobile {
+    position: fixed;
+    padding: 25px 30px;
+    justify-content: flex-end;
+    /* display: inline-flex; */
+    display: none;
+    width: -webkit-fill-available;
+    align-items: center;
+    /*background: linear-gradient(#000000a0 0%, #00000000 100%);*/
+    z-index: 10;
+}
+.header-mobile-before {
+    position: fixed;
+    height: 90px;
+    width: -webkit-fill-available;
+    display: none;
+    z-index: 7;
+    background: linear-gradient(#000000a0 0%, #00000000 100%);
+    top: 0;
+}
+.menu-open-button {
+    display: block;
+}
+.menu-close-button {
+    display: none;
+}
+.menu-open-button, .menu-close-button:hover {
+    cursor: pointer;
+}
+.mobile-menu {
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    position: fixed;
+    /*display: flex;*/
+    display: none;
+    left: 100vw;
+    transition: left 0.4s;
+    z-index: 7;
+    background: #000000;
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); */
+    gap: 36px;
+    overflow-y: scroll;
+    flex-direction: column;
+    align-items: flex-start;
+    /*overflow-y: hidden;*/
+}
+.mobile-menu.menu-open {
+    left: 0;
+}
+.mobile-menu-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 3px solid #373737;*/
+}
+.mobile-menu-text {
+    width: -webkit-fill-available;
+    font-family: "F37 Judge Compressed", "BebasNeue", -apple-system, sans-serif;
+    font-size: 48px;
+    color: #a7a7a7;
+    text-align: center;
+}
+.clickable-2 {
+    transition: color 0.4s;
+}
+.clickable-2:hover {
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.body-clip {
+    overflow-y: clip;
+}
+.logo-header-block-mobile {
+    /*display: block;*/
+    display: none;
+
+    position: fixed;
+    height: fit-content;
+    z-index: 10;
+    top: -75px;
+    transition: top 0.6s;
+    margin-left: calc(50% - 97.5px);
+    width: fit-content;
+}
+.logo-header-block-mobile a {
+    pointer-events: auto;
+}
+.logo-header-block-mobile.down {
+    top: 20px;
+}
+.logo-header-mobile {
+    height: 50px;
+}
+.logo-header-mobile:hover {
+    cursor: pointer;
+}
+/* For Mobile End */
+
 @keyframes top-header-anim {
     from {
         top: -100px;
@@ -40,7 +147,7 @@ header {
     display: block;
     position: fixed;
     height: fit-content;
-    z-index: 8;
+    z-index: 11;
     top: calc(50vh - 75px);
     margin-left: calc(50% - 97.5px);
     width: fit-content;
@@ -450,6 +557,9 @@ footer {
     display: grid;
     gap: 30px;
 }
+.footer-mobile {
+    margin-top: 75px;
+}
 .footer-div-1 {
     display: inline-flex;
     gap: 40px;
@@ -589,4 +699,32 @@ a:any-link {
         transform: rotate(360deg);
         -webkit-transform:rotate(360deg);
     }
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        display: none;
+    }
+    .header-mobile {
+        display: inline-flex;
+        animation: none;
+    }
+    .logo-header-block-mobile, .header-mobile-before {
+        display: block;
+    }
+    .mobile-menu {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-images, .footer-div-1 {
+        flex-direction: column;
+    }
+}
+
+.connect-wallet-mobile {
+    width: -webkit-fill-available;
+    padding: 15px 20px;
 }
